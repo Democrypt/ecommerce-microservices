@@ -1,6 +1,7 @@
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using BasketService.Data;
+using BasketService.Messaging;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -27,6 +28,11 @@ builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder =>
 });
 
 var app = builder.Build();
+
+// Start RabbitMQ Consumer
+var rabbitMqConsumer = new RabbitMqConsumer();
+var consumerThread = new Thread(rabbitMqConsumer.StartConsumer);
+consumerThread.Start();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

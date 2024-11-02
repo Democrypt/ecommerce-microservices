@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogService", "CatalogService\CatalogService.csproj", "{BEC808B5-ABEC-4834-A10F-85ACD66EF833}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasketService", "BasketService\BasketService.csproj", "{3BECBB1B-4AA8-43ED-9684-5B33762312DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{BEC808B5-ABEC-4834-A10F-85ACD66EF833}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEC808B5-ABEC-4834-A10F-85ACD66EF833}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEC808B5-ABEC-4834-A10F-85ACD66EF833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BECBB1B-4AA8-43ED-9684-5B33762312DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BECBB1B-4AA8-43ED-9684-5B33762312DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BECBB1B-4AA8-43ED-9684-5B33762312DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BECBB1B-4AA8-43ED-9684-5B33762312DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
